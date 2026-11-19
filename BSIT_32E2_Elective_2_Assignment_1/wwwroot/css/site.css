@@ -29,3 +29,35 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+body {
+    background-color: #f4f6fb;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #1e3a8a !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.alert-primary {
+    background-color: #dbeafe;
+    border-color: #93c5fd;
+}
+
+.text-success {
+    font-weight: bold;
+}

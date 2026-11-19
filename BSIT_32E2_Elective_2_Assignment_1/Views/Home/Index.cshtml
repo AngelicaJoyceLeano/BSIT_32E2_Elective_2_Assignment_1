@@ -1,8 +1,129 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Assignment 1";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+
+    <div class="text-center mb-4">
+        <h1>Elective 2 - Assignment 1</h1>
+        <h4>BSIT 32E2</h4>
+        <p>ASP.NET Core MVC Questions and Answers</p>
+        <hr />
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">
+            Question 1
+        </div>
+        <div class="card-body">
+            <h5>What is the fundamental difference between Server-Side Rendering (SSR/MVC) and a Decoupled Web API architecture?</h5>
+            <p>A. SSR returns JSON payloads, whereas a Web API compiles .cshtml Razor views on the server.</p>
+            <p>B. SSR compiles HTML views on the server and sends fully rendered markup to the browser, whereas a Web API acts as a stateless data provider returning raw JSON.</p>
+            <p>C. SSR only works with mobile applications, whereas Web APIs are restricted to desktop web browsers.</p>
+            <p>D. SSR requires client-side routing in React, whereas Web APIs manage HTML layouts directly on the server.</p>
+            <p class="text-success"><strong>Correct Answer: B</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 2</div>
+        <div class="card-body">
+            <h5>Why do Web API controllers in ASP.NET Core inherit from ControllerBase instead of Controller?</h5>
+            <p>A. ControllerBase supports Razor View rendering using View() and ViewData.</p>
+            <p>B. ControllerBase provides essential HTTP handling and routing without carrying unnecessary HTML view rendering overhead.</p>
+            <p>C. Controller is obsolete in .NET 8 and cannot handle HTTP POST requests.</p>
+            <p>D. ControllerBase automatically creates SQLite database files on application startup.</p>
+            <p class="text-success"><strong>Correct Answer: B</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 3</div>
+        <div class="card-body">
+            <h5>Which framework attribute automatically triggers an HTTP 400 Bad Request response when incoming request payloads fail structural model validation?</h5>
+            <p>A. [Route]</p>
+            <p>B. [HttpGet]</p>
+            <p>C. [ApiController]</p>
+            <p>D. [FromQuery]</p>
+            <p class="text-success"><strong>Correct Answer: C</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 4</div>
+        <div class="card-body">
+            <h5>Which HTTP status code should an API return after successfully creating a new resource via a POST request, along with a Location header pointing to the new URI?</h5>
+            <p>A. 200 OK</p>
+            <p>B. 201 Created</p>
+            <p>C. 204 No Content</p>
+            <p>D. 404 Not Found</p>
+            <p class="text-success"><strong>Correct Answer: B</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 5</div>
+        <div class="card-body">
+            <h5>When a DELETE request successfully removes a resource from the server and returns no content in the response body, which HTTP status code is standard?</h5>
+            <p>A. 200 OK</p>
+            <p>B. 201 Created</p>
+            <p>C. 204 No Content</p>
+            <p>D. 400 Bad Request</p>
+            <p class="text-success"><strong>Correct Answer: C</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 6</div>
+        <div class="card-body">
+            <h5>Which endpoint URI follows RESTful resource-oriented naming best practices?</h5>
+            <p>A. GET /api/getAllCourses</p>
+            <p>B. GET /api/courses</p>
+            <p>C. POST /api/createNewCourseRecord</p>
+            <p>D. POST /api/deleteCourseById?id=5</p>
+            <p class="text-success"><strong>Correct Answer: B</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 7</div>
+        <div class="card-body">
+            <h5>What is the primary function of the [Route("api/[controller]")] attribute in ASP.NET Core?</h5>
+            <p>A. It connects the controller directly to an Entity Framework database context.</p>
+            <p>B. It maps incoming URI request paths to the controller class using the class name token.</p>
+            <p>C. It encrypts all incoming JSON payloads.</p>
+            <p>D. It enables Cross-Origin Resource Sharing (CORS) for external React apps.</p>
+            <p class="text-success"><strong>Correct Answer: B</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 8</div>
+        <div class="card-body">
+            <h5>Which HTTP verb is safe and idempotent, intended exclusively for retrieving resource data without altering server state?</h5>
+            <p>A. POST</p>
+            <p>B. PUT</p>
+            <p>C. GET</p>
+            <p>D. DELETE</p>
+            <p class="text-success"><strong>Correct Answer: C</strong></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Question 9</div>
+        <div class="card-body">
+            <h5>In ASP.NET Core Web API, what wrapper type allows action methods to return either a strongly typed domain object or standard HTTP status result helpers (such as Ok(), NotFound())?</h5>
+            <p>A. Task</p>
+            <p>B. ActionResult&lt;T&gt;</p>
+            <p>C. IActionResult</p>
+            <p>D. ViewResult</p>
+            <p class="text-success"><strong>Correct Answer: B. ActionResult&lt;T&gt;</strong></p>
+        </div>
+    </div>
+    <div class="alert alert-primary">
+        <h5>Answer Key</h5>
+        1-B | 2-B | 3-C | 4-B | 5-C |
+        6-B | 7-B | 8-C | 9-B |;
+    </div>
+
 </div>
